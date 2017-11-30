@@ -151,19 +151,19 @@ def run_test_digits_in_cube():
     print('-----------------------------------------------------')
 
     #Test 1
-    expected_1 = 1
+    expected_1 = 8
     answer_1 = digits_in_cube(2)
     print('Test 1 expected:', expected_1)
     print(' answer: ', answer_1)
 
     #Test 2
-    expected_2 = 6
+    expected_2 = 54
     answer_2 = digits_in_cube(975)
     print('Test 2 expected:', expected_2)
     print(' answer: ', answer_2)
 
     #Test 3
-    expected_3 = 7
+    expected_3 = 46
     answer_3 = digits_in_cube(3142)
     print('Test 3 expected:', expected_3)
     print(' answer: ', answer_3)
@@ -188,7 +188,9 @@ def digits_in_cube(n):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ####################################################################
     # ------------------------------------------------------------------
-
+    x = n^3
+    answer = sum_of_digits(x)
+    return answer
 
 def run_test_digits_in_power():
     """ Tests the   digits_in_power   function. """
