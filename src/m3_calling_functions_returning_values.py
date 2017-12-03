@@ -32,7 +32,7 @@ def main():
     #       ** Ask a TA or your professor for help in that case. **
     # ------------------------------------------------------------------
 
-    # m3t_tester.main()
+    m3t_tester.main()
 
 
 def run_test_sum_of_digits():
@@ -267,7 +267,7 @@ def run_test_fancy_sums_of_digits():
     print('Testing the   fancy_sums_of_digits   function:')
     print('--------------------------------------------------')
 
-    #Test 1 
+    #Test 1
     expected_1 = 1
     answer_1 = fancy_sums_of_digits(10)
     print('Test 1 expected:', expected_1)
@@ -321,6 +321,12 @@ def fancy_sums_of_digits(n):
     #    the    sum_of_digits    function that is DEFINED ABOVE.
     ####################################################################
     # ------------------------------------------------------------------
+    x = sum_of_digits(math.pow(n, 1000))
+    y = sum_of_digits(math.pow(n, 999))
+    z = math.pow(x, y)
+    answer = sum_of_digits(z)
+    return answer
+
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
