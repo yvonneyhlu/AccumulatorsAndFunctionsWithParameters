@@ -255,7 +255,7 @@ def digits_in_power(n, k):
 def run_test_fancy_sums_of_digits():
     """ Tests the   fancy_sums_of_digits   function. """
     # ------------------------------------------------------------------
-    # TODO: 7. Implement this function.
+    # DONE: 7. Implement this function.
     #   It TESTS the  fancy_sums_of_digits  function defined below.
     #   Include at least **   3   ** tests.
     #
@@ -267,6 +267,19 @@ def run_test_fancy_sums_of_digits():
     print('Testing the   fancy_sums_of_digits   function:')
     print('--------------------------------------------------')
 
+    #Test 1 
+    expected_1 = 1
+    answer_1 = fancy_sums_of_digits(10)
+    print('Test 1 expected:', expected_1)
+    print(" answer:", answer_1)
+
+    # Test 2
+    answer_2 = fancy_sums_of_digits(3)
+    print('Test 1 answer:', answer_2)
+
+    # Test 3
+    answer_3 = fancy_sums_of_digits(6)
+    print('Test 1 answer:', answer_3)
     # ------------------------------------------------------------------
     # HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
     # the correct (expected) answer for that test case.  (It's easy.)
