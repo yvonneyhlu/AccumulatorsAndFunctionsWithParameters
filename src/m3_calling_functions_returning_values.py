@@ -217,13 +217,13 @@ def run_test_digits_in_power():
     # Test 2
     expected_2 = 13
     answer_2 = digits_in_power(2, 8)
-    print('Test 1 expected:', expected_2)
+    print('Test 2 expected:', expected_2)
     print(' answer: ', answer_2)
 
     # Test 3
     expected_3 = 1
     answer_3 = digits_in_power(1, 40)
-    print('Test 1 expected:', expected_3)
+    print('Test 3 expected:', expected_3)
     print(' answer: ', answer_3)
 
 
@@ -275,11 +275,11 @@ def run_test_fancy_sums_of_digits():
 
     # Test 2
     answer_2 = fancy_sums_of_digits(3)
-    print('Test 1 answer:', answer_2)
+    print('Test 2 answer:', answer_2)
 
     # Test 3
     answer_3 = fancy_sums_of_digits(6)
-    print('Test 1 answer:', answer_3)
+    print('Test 3 answer:', answer_3)
     # ------------------------------------------------------------------
     # HINT:  For your 1st test, consider  n=10.  Figure out BY HAND
     # the correct (expected) answer for that test case.  (It's easy.)
