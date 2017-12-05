@@ -18,7 +18,8 @@ def main():
     #print_sequence1()
     #draw_circles1()
     #print_sequence2()
-    draw_circles2()
+    #draw_circles2()
+    print_sequence3()
 
 
 def print_sequence1():
@@ -120,7 +121,7 @@ def draw_circles2():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -135,6 +136,7 @@ def draw_circles2():
         origin = 50 + k * 20
         center_point = rg.Point(origin, 100)
         circle = rg.Circle(center_point, radius)
+        circle.fill_color = 'blue'
         circle.attach_to(window)
     window.render()
     window.close_on_mouse_click()
@@ -151,7 +153,7 @@ def print_sequence3():
       100.
     """
     # ------------------------------------------------------------------
-    # TODO: 6. Implement this function, per its doc-string above.
+    # DONE: 6. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -159,6 +161,12 @@ def print_sequence3():
     print('--------------------------------------------------')
     print('Running print_sequence3:')
     print('--------------------------------------------------')
+
+    count = 0
+    for k in range(100):
+        count = count + 1
+        print(count)
+    return count
 
 
 def draw_circles3():
