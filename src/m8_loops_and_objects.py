@@ -56,7 +56,7 @@ def draw_circles1():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement this function, per its doc-string above.
+    # DONE: 3. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # HINT: You might find a prior module useful when 'writing' this code.
@@ -72,9 +72,10 @@ def draw_circles1():
     for k in range(20):
         radius = radius + 10
         circle = rg.Circle(center_point, radius)
-    circle.attach_to(window)
+        circle.attach_to(window)
     window.render()
     return circle
+    window.close_on_mouse_click()
 
 
 
