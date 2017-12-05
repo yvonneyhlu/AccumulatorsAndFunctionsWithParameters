@@ -15,8 +15,8 @@ import rosegraphics as rg
 def main():
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
-    print_sequence1()
-
+    #print_sequence1()
+    draw_circles1()
 
 def print_sequence1():
     """
@@ -67,10 +67,16 @@ def draw_circles1():
     print('--------------------------------------------------')
 
     window = rg.RoseWindow(400, 400)
-    count = 0
+    center_point = rg.Point(200, 200)
+    radius = 0
     for k in range(20):
-        count = count + 10
-        
+        radius = radius + 10
+        circle = rg.Circle(center_point, radius)
+    circle.attach_to(window)
+    window.render()
+    return circle
+
+
 
 def print_sequence2():
     """
